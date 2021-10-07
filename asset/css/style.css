@@ -1,0 +1,153 @@
+/**
+* Variables
+*/
+:root {
+--white : #ffffff;
+--black : #000000;
+--GreyLight : #f8f9fa;
+--Grey : #999999;
+--GreyDark: #4a4a4b;
+--Green : #a2c0be;
+--GrenDark : #567876;
+--Orange : #ff9900;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+.container {
+    width: 60%;
+    margin: auto;
+}
+/**
+* Entête
+*/
+header {
+    background-color: var(--GreyLight);
+}
+header img {
+    width: 25%;
+}
+header h1 {
+    margin: 0;
+    font-size: 4em;
+    font-weight: lighter;
+}
+header p {
+    margin: 0;
+    font-weight: 1.3em;
+    font-weight: lighter;
+    color: var(--Grey);
+}
+.logo {
+    font-size: 2em;
+    color: var(--black);
+}
+span {
+    color: var(--Orange);
+}
+/**
+* Navigation
+*/
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+header section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+nav ul a {
+    color: var(--Grey);
+    text-decoration: none;
+}
+nav p {
+    color: var(--Grey);
+} 
+
+/**
+* Corp de la page Main
+*/
+/**
+* - section : Welcome dans le main
+*/
+main .Welcome {
+    text-align: center;
+    width: 40%;
+    margin: auto; 
+}
+main .Welcome h2 {
+    margin-bottom: 10px;
+    margin-top: 40px;
+    font-size: 2em;
+    font-weight: bold;
+}
+main .Welcome p{
+    margin: 0;
+    font-weight: lighter;
+    color: var(--Grey);
+}
+
+/** section : 3 bandes texte + image */
+
+main .card img {
+    width: 90%;
+    box-shadow: 10px 10px 0 var(--Green);
+}
+main .card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    gap: 150px;
+    text-align: right;
+}
+main .card h3{
+    font-size: 2em;
+    font-weight: normal;
+    margin:0;
+}
+main .card p{
+    color:var(--Grey);
+    margin-bottom : 40px;
+}
+.ReadMore{
+    text-decoration: none;
+    color: var(--white);
+    font-size: small;
+    padding: 12px 32px;
+    background-color: var(--Green);
+    border-radius: 100px;
+    transition: backgroun-color 500ms;
+}
+.ReadMore:hover{
+    background-color: var(--black);
+    transition: backgroun-color 500ms;
+}
+#AlignLeft {
+    text-align: left;
+}
+/**
+* Pied de page
+*/
+footer {
+    background-color: var(--GreyDark);
+    color: var(--white);
+    font-size: 1em;
+    text-align: center;
+    padding: 50px 0;
+}
